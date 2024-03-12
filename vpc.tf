@@ -6,6 +6,7 @@ provider "aws"{
 resource "aws_vpc" "vpccr"{
   cidr_block = "${var.vpc}"
   tags={
+	name = "sr"
     Name = "${var.tagvpcname}"
   }
 }
